@@ -17,18 +17,7 @@
 
 ## 2. Блок-схема
 
-```mermaid
-graph TD
-    Start((Начало)) --> Input[/Ввод x, y/]
-    Input --> Calc[Вычисление y1, y2, x1, x2]
-    Calc --> CondY{y >= 0 и y >= y1 и y <= y2?}
-    CondY -- Да --> CondX{x >= 0 и x >= x1 и x <= x2?}
-    CondY -- Нет --> PrintNo[/Вывод: не лежит в заданном рисунке/]
-    CondX -- Да --> PrintYes[/Вывод: лежит в заданном рисунке/]
-    CondX -- Нет --> PrintNo
-    PrintNo --> End((Конец))
-    PrintYes --> End
-```
+![Диаграмма](Диаграмма6.png)
 
 ## 3. Реализация программы
 
